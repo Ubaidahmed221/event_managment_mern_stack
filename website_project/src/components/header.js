@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -36,10 +37,14 @@ export default function Header() {
             <div className="register-login-group">
               <ul>
                 <li>
-                  <a href="#register-modal" className="register-modal-btn">
+                  {/* <a href="#register-modal" className="register-modal-btn">
                     <i className="fas fa-user" />
                     Register
-                  </a>
+                  </a> */}
+                  <Link to="/signup" className="register-modal-btn">
+                <i className="fas fa-user" />
+                Register
+              </Link>
                   <div id="register-modal" className="reglog-modal-wrapper register-modal mfp-hide clearfix" style={{backgroundImage: 'url(assets/images/login-modal-bg.jpg)'}}>
                     <div className="overlay-black clearfix">
                       {/* leftside-content - start */}
@@ -51,8 +56,14 @@ export default function Header() {
                         </div>
                         <div className="register-login-link mb-80">
                           <ul>
-                            <li><a href="#!">Login</a></li>
-                            <li className="active"><a href="#!">Register</a></li>
+                            <li>
+                              {/* <a href="#!">Login</a> */}
+                              <Link to="/login" className="register-modal-btn">
+                            <i className="fas fa-user" />
+                            Login
+                          </Link>
+                              </li>
+                            {/* <li className="active"><a href="#!">Register</a></li> */}
                           </ul>
                         </div>
                         <div className="copyright-text">

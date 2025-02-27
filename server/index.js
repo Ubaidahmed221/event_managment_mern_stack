@@ -1,27 +1,34 @@
 import express from "express";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
+import cors from "cors"; 
 import dotenv from "dotenv";
-import route from "./routes/userRoute.js";
-
-
-const app = express();
-app.use(bodyParser.json());
+import userRoutes from "./routes/userRoute.js";
 
 dotenv.config();
 
+const app = express();
+
+// Apply CORS before routes
+app.use(cors({
+    origin: "http://localhost:3000", // Allow frontend origin
+    methods: "GET,POST,PUT,DELETE",
+    allowedHeaders: "Content-Type,Authorization"
+}));
+
+app.use(bodyParser.json());
+
 const PORT = process.env.PORT || 7000;
-const MONGOURL = process.env.MONGO_URL;
+const MONGO_URL = process.env.MONGO_URL;
 
-mongoose
-        .connect(MONGOURL)
-        .then(() =>{
-            console.log("DB connected successfully");
-            app.listen(PORT, ()=>{
-                console.log(`server is running ${PORT}`);
+mongoose.connect(MONGO_URL)
+    .then(() => {
+        console.log("DB connected successfully");
+        app.listen(PORT, () => {
+            console.log(`Server is running on port ${PORT}`);
+        });
+    })
+    .catch((error) => console.log(error));
 
-            });
-        })
-        .catch((error) => console.log(error));
-
-app.use("/api", route);
+// Routes should be defined after CORS middleware
+app.use("/api", userRoutes);
