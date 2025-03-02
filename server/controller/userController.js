@@ -1,5 +1,9 @@
 import User from "../model/userModel.js";
 import bcrypt from "bcryptjs";
+// const jwt = require("jsonwebtoken")
+// const cookieParser = require("cookie-parser")
+import jwt from "jsonwebtoken";  // ✅ Fix require issue
+import cookieParser from "cookie-parser";
 
 // Signup API
 export const signup = async (req, res) => {
@@ -49,14 +53,26 @@ export const login = async (req, res) => {
             return res.status(400).json({ message: "Invalid email or password" });
         }
 
-        res.status(200).json({ message: "Login successful" });
+        // Generate JWT token
+        const token = jwt.sign(
+            { email: user.email, role: user.role, name: user.name },
+            "jwt-secret-key",
+            { expiresIn: "1d" }
+        );
+
+        // Set token in cookie
+        res.cookie('token', token, { httpOnly: true, secure: process.env.NODE_ENV === "production" });
+        
+        res.status(200).json({ Status: "Success", role: user.role, name: user.name });
 
     } catch (error) {
         res.status(500).json({ errorMessage: error.message });
     }
 };
 
+
 // Logout API
 export const logout = async (req, res) => {
-    res.status(200).json({ message: "Logout successful" });
+    res.clearCookie('token', { path: '/' }); // Clear the token cookie
+    res.status(200).json({ message: "Logged out successfully" }); // Send a success response
 };

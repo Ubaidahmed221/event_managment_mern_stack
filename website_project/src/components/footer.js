@@ -3,159 +3,43 @@ import React from 'react'
 export default function Footer() {
   return (
     <>
-{/* footer-section2 - start
-		================================================== */}
-<footer id="footer-section" className="footer-section footer-section2 clearfix">
-  {/* footer-top - start */}
-  <div className="footer-top sec-ptb-100 clearfix">
+<footer>
+  <div className="footer-row2 pb-3 bg-light-f7">
     <div className="container">
-      <div className="row">
-        {/* about-wrapper - start */}
-        <div className="col-lg-4 col-md-6 col-sm-12">
-          <div className="about-wrapper">
-            {/* site-logo-wrapper - start */}
-            <div className="site-logo-wrapper mb-30">
-              <a href="index-1.html" className="logo">
-                <img src="assets/images/1.site-logo.png" alt="logo_not_found" />
-              </a>
-            </div>
-            {/* site-logo-wrapper - end */}
-            <p className="mb-30">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
-            </p>
-            {/* basic-info - start */}
-            <div className="basic-info ul-li-block mb-50">
-              <ul>
-                <li>
-                  <i className="fas fa-map-marker-alt" />
-                  100 highland ave, california, united state
-                </li>
-                <li>
-                  <i className="fas fa-envelope" />
-                  <a href="#!">contact@pantero.com</a>
-                </li>
-                <li>
-                  <i className="fas fa-phone" />
-                  <a href="#!">100 800 1234 5555</a>
-                </li>
-              </ul>
-            </div>
-            {/* basic-info - end */}
-            {/* social-links - start */}
-            <div className="social-links ul-li">
-              <h3 className="social-title">network</h3>
-              <ul>
-                <li>
-                  <a href="#!"><i className="fab fa-facebook-f" /></a>
-                </li>
-                <li>
-                  <a href="#!"><i className="fab fa-twitter" /></a>
-                </li>
-                <li>
-                  <a href="#!"><i className="fab fa-twitch" /></a>
-                </li>
-                <li>
-                  <a href="#!"><i className="fab fa-google-plus-g" /></a>
-                </li>
-                <li>
-                  <a href="#!"><i className="fab fa-instagram" /></a>
-                </li>
-              </ul>
-            </div>
-            {/* social-links - end */}
-          </div>
+      <div _ngcontent-rog-c29 className="shape-top"><svg _ngcontent-rog-c29 fill="#f7f2ee" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 131.1" preserveAspectRatio="none">
+          <path _ngcontent-rog-c29 d="M0 0L2600 0 2600 69.1 0 0z" />
+          <path _ngcontent-rog-c29 d="M0 0L2600 0 2600 69.1 0 69.1z" style={{opacity: '0.5'}} />
+          <path _ngcontent-rog-c29 d="M2600 0L0 0 0 130.1 2600 69.1z" style={{opacity: '0.25'}} />
+        </svg></div>
+      <div className="row justify-content-center mt60 pb-4">
+        <div className="col-lg-12 col-sm-12 text-center">
+          <a className="navbar-brand img-ctr" href="index.html"> <img src="assets/images//logo-2.png" alt="Logo" width={100} /></a>
+          <ul className="footer-link-v2 link-hover mt30">
+            <li><a href="feature.html">Feature</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+          </ul>
         </div>
-        {/* about-wrapper - end */}
-        {/* usefullinks-wrapper - start */}
-        <div className="col-lg-4 col-md-6 col-sm-12">
-          <div className="usefullinks-wrapper ul-li-block">
-            <h3 className="footer-item-title">
-              useful <strong>links</strong>
-            </h3>
-            <ul>
-              <li><a href="#!">About Harmoni</a></li>
-              <li><a href="#!">Disclaimer</a></li>
-              <li><a href="#!">Contact us</a></li>
-              <li><a href="#!">Events Schedule</a></li>
-              <li><a href="#!">Sponsors</a></li>
-              <li><a href="#!">Venues</a></li>
-              <li><a href="#!">Tickets</a></li>
-              <li><a href="#!">Pricing Plans</a></li>
-            </ul>
-          </div>
-        </div>
-        {/* usefullinks-wrapper - end */}
-        {/* instagram-wrapper - start */}
-        <div className="col-lg-4 col-md-6 col-sm-12">
-          <div className="instagram-wrapper ul-li">
-            <h3 className="footer-item-title">
-              harmoni <strong>instagram</strong>
-            </h3>
-            <ul>
-              <li className="image-wrapper">
-                <img src="assets/images/footer/instagram/img1.png" alt="Image_not_found" />
-                <a href="#!"><i className="fab fa-instagram" /></a>
-              </li>
-              <li className="image-wrapper">
-                <img src="assets/images/footer/instagram/img2.png" alt="Image_not_found" />
-                <a href="#!"><i className="fab fa-instagram" /></a>
-              </li>
-              <li className="image-wrapper">
-                <img src="assets/images/footer/instagram/img3.png" alt="Image_not_found" />
-                <a href="#!"><i className="fab fa-instagram" /></a>
-              </li>
-              <li className="image-wrapper">
-                <img src="assets/images/footer/instagram/img4.png" alt="Image_not_found" />
-                <a href="#!"><i className="fab fa-instagram" /></a>
-              </li>
-              <li className="image-wrapper">
-                <img src="assets/images/footer/instagram/img5.png" alt="Image_not_found" />
-                <a href="#!"><i className="fab fa-instagram" /></a>
-              </li>
-              <li className="image-wrapper">
-                <img src="assets/images/footer/instagram/img6.png" alt="Image_not_found" />
-                <a href="#!"><i className="fab fa-instagram" /></a>
-              </li>
-            </ul>
-            <h4 className="followus-link">
-              Follow Our Instagram <a href="#!">#Harmoni</a>
-            </h4>
-          </div>
-        </div>
-        {/* instagram-wrapper - end */}
       </div>
-    </div>
-  </div>
-  {/* footer-top - end */}
-  <div className="footer-bottom">
-    <div className="container">
-      <div className="row">
-        {/* copyright-text - start */}
-        <div className="col-lg-7 col-md-12 col-sm-12">
-          <div className="copyright-text">
-            <p className="m-0">©2018 <a href="#!" className="site-link">Harmoni.com</a> all right reserved, made with <i className="fas fa-heart" /> by <a href="#!" className="author-link"><strong>jThemes Studio</strong></a></p>
+      <div className="row copyright">
+        <div className="col-lg-12">
+          <div className="footer-social-media-icons">
+            <a href="https://web.facebook.com/vexpo.pk/" target="blank"><i className="fab fa-facebook" /></a>
+            <a href="https://www.youtube.com/channel/UCqA57Z235UqP04LlYDjmhTg" target="blank"><i className="fab fa-youtube" /></a>
+            <a href="https://www.instagram.com/vexpo.pk/" target="blank"><i className="fab fa-instagram" /></a>
+          </div>
+          <div className="footer-">
+            <p className="text-white">Copyright © vExpo all rights reserved.</p>
           </div>
         </div>
-        {/* copyright-text - end */}
-        {/* footer-menu - start */}
-        <div className="col-lg-5 col-md-12 col-sm-12">
-          <div className="footer-menu">
-            <ul>
-              <li><a href="contact.html">Contact us</a></li>
-              <li><a href="about.html">About us</a></li>
-              <li><a href="#!">Site map</a></li>
-              <li><a href="#!">Privacy policy</a></li>
-            </ul>
-          </div>
-        </div>
-        {/* footer-menu - end */}
       </div>
     </div>
   </div>
 </footer>
+{/*End Footer*/}
 
-
-		{/* <!-- footer-section2 - end */}
     </>
   )
 }

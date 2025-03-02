@@ -4,710 +4,150 @@ import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <>
-    	<div>
-  {/* header-section - start
-		================================================== */}
-  <header id="header-section" className="header-section default-header-section auto-hide-header clearfix">
-    {/* header-top - start */}
-    <div className="header-top">
-      <div className="container">
-        <div className="row">
-          {/* basic-contact - start */}
-          <div className="col-lg-6">
-            <div className="basic-contact">
-              <ul>
-                <li>
-                  <a href="#!">
-                    <i className="fas fa-envelope" />
-                    info@harmoni.com
-                  </a>
-                </li>
-                <li>
-                  <a href="#!">
-                    <i className="fas fa-phone" />
-                    100-2222-9999
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          {/* basic-contact - end */}
-          {/* register-login-group - start */}
-          <div className="col-lg-6">
-            <div className="register-login-group">
-              <ul>
-                <li>
-                  {/* <a href="#register-modal" className="register-modal-btn">
-                    <i className="fas fa-user" />
-                    Register
-                  </a> */}
-                  <Link to="/signup" className="register-modal-btn">
-                <i className="fas fa-user" />
-                Register
-              </Link>
-                  <div id="register-modal" className="reglog-modal-wrapper register-modal mfp-hide clearfix" style={{backgroundImage: 'url(assets/images/login-modal-bg.jpg)'}}>
-                    <div className="overlay-black clearfix">
-                      {/* leftside-content - start */}
-                      <div className="leftside-content">
-                        <div className="site-logo-wrapper mb-80">
-                          <a href="#!" className="logo">
-                            <img src="assets/images/2.site-logo.png" alt="logo_not_found" />
-                          </a>
-                        </div>
-                        <div className="register-login-link mb-80">
-                          <ul>
-                            <li>
-                              {/* <a href="#!">Login</a> */}
-                              <Link to="/login" className="register-modal-btn">
-                            <i className="fas fa-user" />
-                            Login
-                          </Link>
-                              </li>
-                            {/* <li className="active"><a href="#!">Register</a></li> */}
-                          </ul>
-                        </div>
-                        <div className="copyright-text">
-                          <p className="m-0">©2018 <a href="#!" className="yellow-color">Harmoni.com</a> all right reserved, made with <i className="fas fa-heart" /> by jThemes Studio </p>
-                        </div>
-                      </div>
-                      {/* leftside-content - end */}
-                      {/* rightside-content - start */}
-                      <div className="rightside-content text-center">
-                        <div className="mb-30">
-                          <h2 className="form-title title-large white-color">Account <strong>Register</strong></h2>
-                          <span className="form-subtitle white-color">Have an account? <strong>LOGIN NOW</strong></span>
-                        </div>
-                        <div className="login-form text-center mb-50">
-                          <form action="#!">
-                            <div className="form-item">
-                              <input type="email" placeholder="User Name" />
-                            </div>
-                            <div className="form-item">
-                              <input type="password" placeholder="Password" />
-                            </div>
-                            <div className="form-item">
-                              <input type="email" placeholder="Repeat Password" />
-                            </div>
-                            <div className="form-item">
-                              <input type="password" placeholder="Email Address" />
-                            </div>
-                            <div className="human-verification text-left">
-                              <input type="checkbox" id="imnotarobot" />
-                              <label htmlFor="imnotarobot">I'm not a robot</label>
-                              <span className="verification-image">
-                                <img src="assets/images/iamnotrobot.png" alt="Image_not_found" />
-                              </span>
-                            </div>
-                            <button type="submit" className="login-btn">login now</button>
-                          </form>
-                        </div>
-                        <div className="bottom-text white-color">
-                          <p className="m-0">
-                            * Denotes mandatory field.
-                          </p>
-                          <p className="m-0">** At least one telephone number is required.</p>
-                        </div>
-                      </div>
-                      {/* rightside-content - end */}
-                      <a className="popup-modal-dismiss" href="#!">
-                        <i className="fas fa-times" />
-                      </a>
+    <div>
+  {/*Start Header */}
+  <header className="header-pr nav-bg-b main-header navfix fixed-top menu-dark ">
+    <div className="container-fluid m-pad">
+      <div className="menu-header">
+        <div className="dsk-logo"><a className="nav-brand" href="index.html">
+            <img src="assets/images/logo.png" height="50px" alt="Logo" className="mega-white-logo" />
+            <img src="assets/images/logo.png" height="50px" alt="Logo" className="mega-darks-logo" />
+          </a></div>
+        <div className="custom-nav" role="navigation">
+          <ul className="nav-list onepge link-hover">
+            <li><a href="feature.html" className="menu-links">Features</a></li>
+            <li><a href="event.html" className="menu-links">Events</a></li>
+            {/* <li><a href="job-boards.html" class="menu-links">Job Board</a></li>
+						<li><a href="#" class="menu-links">Property Board</a></li> */}
+            <li className="sbmenu rpdropdown">
+              <a href="#" className="menu-links">Resources</a>
+              <div className="nx-dropdown menu-dorpdown">
+                <div className="sub-menu-section">
+                  <div className="sub-menu-center-block">
+                    <div className="sub-menu-column smfull">
+                      <ul>
+                        <li><a href="gallery.html">Gallery</a> </li>
+                        <li><a href="team.html">Team</a> </li>
+                      </ul>
                     </div>
                   </div>
-                </li>
-                <li>
-                  <a href="#login-modal" className="login-modal-btn">
-                    <i className="fas fa-lock" />
-                    Login
-                  </a>
-                  <div id="login-modal" className="reglog-modal-wrapper mfp-hide clearfix" style={{backgroundImage: 'url(assets/images/login-modal-bg.jpg)'}}>
-                    <div className="overlay-black clearfix">
-                      {/* leftside-content - start */}
-                      <div className="leftside-content">
-                        <div className="site-logo-wrapper mb-80">
-                          <a href="#!" className="logo">
-                            <img src="assets/images/2.site-logo.png" alt="logo_not_found" />
-                          </a>
-                        </div>
-                        <div className="register-login-link mb-80">
-                          <ul>
-                            <li className="active"><a href="#!">Login</a></li>
-                            <li><a href="#!">Register</a></li>
-                          </ul>
-                        </div>
-                        <div className="copyright-text">
-                          <p className="m-0">©2018 <a href="#!" className="yellow-color">Harmoni.com</a> all right reserved, made with <i className="fas fa-heart" /> by jThemes Studio </p>
-                        </div>
-                      </div>
-                      {/* leftside-content - end */}
-                      {/* rightside-content - start */}
-                      <div className="rightside-content text-center">
-                        <div className="mb-30">
-                          <h2 className="form-title title-large white-color">Account <strong>Login</strong></h2>
-                          <span className="form-subtitle white-color">Login to our website, or <strong>REGISTER</strong></span>
-                        </div>
-                        <div className="fb-login-btn mb-30">
-                          <a href="#!">
-                            <span className="icon">
-                              <i className="fab fa-facebook-f" />
-                            </span>
-                            login with facebook
-                          </a>
-                        </div>
-                        <div className="or-text mb-30">
-                          <span>or sign in</span>
-                        </div>
-                        <div className="login-form text-center mb-50">
-                          <form action="#!">
-                            <div className="form-item">
-                              <input type="email" placeholder="example@gmail.com" />
-                            </div>
-                            <div className="form-item">
-                              <input type="password" placeholder="Password" />
-                            </div>
-                            <button type="submit" className="login-btn">login now</button>
-                          </form>
-                        </div>
-                        <div className="bottom-text white-color">
-                          <p className="m-0">
-                            * Denotes mandatory field.
-                          </p>
-                          <p className="m-0">** At least one telephone number is required.</p>
-                        </div>
-                      </div>
-                      {/* rightside-content - end */}
-                      <a className="popup-modal-dismiss" href="#!">
-                        <i className="fas fa-times" />
-                      </a>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          {/* register-login-group - end */}
-        </div>
-      </div>
-    </div>
-    {/* header-top - end */}
-    {/* header-bottom - start */}
-    <div className="header-bottom">
-      <div className="container">
-        <div className="row">
-          {/* site-logo-wrapper - start */}
-          <div className="col-lg-3">
-            <div className="site-logo-wrapper">
-              <a href="index-1.html" className="logo">
-                <img src="assets/images/0.site-logo.png" alt="logo_not_found" />
-              </a>
-            </div>
-          </div>
-          {/* site-logo-wrapper - end */}
-          {/* mainmenu-wrapper - start */}
-          <div className="col-lg-9">
-            <div className="mainmenu-wrapper">
-              <div className="row">
-                {/* menu-item-list - start */}
-                <div className="col-lg-10">
-                  <div className="menu-item-list ul-li clearfix">
-                    <ul>
-                      <li className="menu-item-has-children">
-                        <a href="#!">home</a>
-                        <ul className="sub-menu">
-                          <li className="menu-item-has-children">
-                            <a href="index-1.html">home v.1</a>
-                            <ul className="sub-menu">
-                              <li>
-                                <a href="#">example v.1.1</a>
-                              </li>
-                              <li>
-                                <a href="#">example v.1.2</a>
-                              </li>
-                              <li>
-                                <a href="#">example v.1.3</a>
-                              </li>
-                              <li>
-                                <a href="#">example v.1.4</a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li className="menu-item-has-children">
-                            <a href="index-2.html">home v.2</a>
-                            <ul className="sub-menu">
-                              <li>
-                                <a href="#">example v.2.1</a>
-                              </li>
-                              <li>
-                                <a href="#">example v.2.2</a>
-                              </li>
-                              <li>
-                                <a href="#">example v.2.3</a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li className="menu-item-has-children">
-                            <a href="index-3.html">home v.3</a>
-                            <ul className="sub-menu">
-                              <li>
-                                <a href="#">example v.3.1</a>
-                              </li>
-                              <li>
-                                <a href="#">example v.3.2</a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li className="menu-item-has-children">
-                            <a href="index-4.html">home v.4</a>
-                            <ul className="sub-menu">
-                              <li>
-                                <a href="#">example v.4.1</a>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="menu-item-has-children">
-                        <a href="#!">about</a>
-                        <ul className="sub-menu">
-                          <li><a href="about.html">about us</a></li>
-                          <li><a href="service.html">service</a></li>
-                          <li><a href="faq.html">FAQ</a></li>
-                        </ul>
-                      </li>
-                      <li className="menu-item-has-children">
-                        <a href="#!">events</a>
-                        <ul className="sub-menu">
-                          <li className="menu-item-has-children">
-                            <a href="event-1.html">event List</a>
-                            <ul className="sub-menu">
-                              <li><a href="event-1-without-sidebar.html">list without sidebar</a></li>
-                            </ul>
-                          </li>
-                          <li className="menu-item-has-children">
-                            <a href="event-2.html">event Grid</a>
-                            <ul className="sub-menu">
-                              <li><a href="event-2-without-sidebar.html">grid without sidebar</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="event-details.html">event details</a></li>
-                          <li><a href="booking.html">event booking</a></li>
-                        </ul>
-                      </li>
-                      <li className="menu-item-has-children">
-                        <a href="#!">blogs</a>
-                        <ul className="sub-menu">
-                          <li><a href="blog.html">blog</a></li>
-                          <li><a href="blog-details.html">blog details</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="gallery.html">gallery</a>
-                      </li>
-                      <li>
-                        <a href="speaker.html">speaker</a>
-                      </li>
-                      <li className="menu-item-has-children active">
-                        <a href="#!">contact</a>
-                        <ul className="sub-menu">
-                          <li><a className="active" href="contact.html">contact us</a></li>
-                          <li><a href="404-error.html">404 Error</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
                 </div>
-                {/* menu-item-list - end */}
-                {/* menu-item-list - start */}
-                <div className="col-lg-2">
-                  <div className="user-search-btn-group ul-li clearfix">
-                    <ul>
-                      <li>
-                        <a href="#!">
-                          <i className="fas fa-user" />
-                        </a>
-                      </li>
-                      <li>
-                        <button type="button" className="toggle-overlay search-btn">
-                          <i className="fas fa-search" />
-                        </button>
-                        {/* search-body - start */}
-                        <div className="search-body">
-                          <div className="search-form">
-                            <form action="#">
-                              <input className="search-input" type="search" placeholder="Search Here" />
-                              <div className="outer-close toggle-overlay">
-                                <button type="button" className="search-close">
-                                  <i className="fas fa-times" />
-                                </button>
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                        {/* search-body - end */}
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                {/* menu-item-list - end */}
               </div>
-            </div>
-          </div>
-          {/* mainmenu-wrapper - end */}
+            </li>
+            <li className="sbmenu rpdropdown">
+              <a href="#" className="menu-links">Visit Expos</a>
+              <div className="nx-dropdown menu-dorpdown">
+                <div className="sub-menu-section">
+                  <div className="sub-menu-center-block">
+                    <div className="sub-menu-column smfull">
+                      <ul>
+                        <li><a href="https://property.vexpo.pk/" target="_blank">Property Expo</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="about-us.html" className="menu-links">About Us </a></li>
+            <li><a href="contact-us.html" className="menu-links">Contact Us </a></li>
+            {/* <li class="ml-5"><a href="#" class="menu-links">Login</a></li> */}
+            <li className="ml-3">
+              <a href="contact-us.html" className="btn-br ">Sign Up <span className="circle" />
+              </a> 
+              </li>
+              <li className="ml-3">
+              <a href="contact-us.html" className="btn-br bg-btn4 btshad-b2 lnk">Login <span className="circle" />
+              </a> 
+              </li>
+          </ul>
+        </div>
+        <div className="mobile-menu2">
+          <ul className="mob-nav2">
+            <li><a href="contact-us.html" className="btn-round- trngl btn-br bg-btn btshad-b1"><i className="fas fa-envelope-open-text" /></a></li>
+            <li className="navm-"> <a className="toggle" href="#"><span /></a></li>
+          </ul>
         </div>
       </div>
+      {/*Mobile Menu*/}
+      <nav id="main-nav">
+        <ul className="first-nav">
+          <li><a href="index.html" className="menu-links">Home</a></li>
+          <li><a href="feature.html" className="menu-links">Features</a></li>
+          <li><a href="event.html" className="menu-links">Events</a></li>
+          <li><a href="https://property.vexpo.pk/" target="_blank">Property Expo</a></li>
+          <li><a href="gallery.html" className="menu-links">Gallery</a></li>
+          <li><a href="team.html" className="menu-links">Team</a></li>
+          <li><a href="about-us.html" className="menu-links">About Us</a></li>
+          <li><a href="contact-us.html" className="menu-links">Contact Us</a></li>
+          {/* <li><a href="#" class="menu-links">Login</a></li> */}
+        </ul>
+        <ul className="bottom-nav">
+          <li className="prb">
+            <a href="tel:03111222413">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384">
+                <path d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.719-3.656-23.896-0.302-30.438,6.417l-43.177,32.594
+										c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448
+										c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.813C13.823,0,0,13.823,0,30.813
+										C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z" />
+              </svg>
+            </a>
+          </li>
+          <li className="prb">
+            <a href="mailto:info@vExpo.com">
+              <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                <path d="M0 0h24v24H0z" fill="none" /></svg>
+            </a>
+          </li>
+          <li className="prb">
+            <a href="skype:vExpo.company?call">
+              <svg enableBackground="new 0 0 24 24" height={18} viewBox="0 0 24 24" width={18} xmlns="http://www.w3.org/2000/svg">
+                <path d="m23.309 14.547c1.738-7.81-5.104-14.905-13.139-13.543-4.362-2.707-10.17.352-10.17 5.542 0 1.207.333 2.337.912 3.311-1.615 7.828 5.283 14.821 13.311 13.366 5.675 3.001 11.946-2.984 9.086-8.676zm-7.638 4.71c-2.108.867-5.577.872-7.676-.227-2.993-1.596-3.525-5.189-.943-5.189 1.946 0 1.33 2.269 3.295 3.194.902.417 2.841.46 3.968-.3 1.113-.745 1.011-1.917.406-2.477-1.603-1.48-6.19-.892-8.287-3.483-.911-1.124-1.083-3.107.037-4.545 1.952-2.512 7.68-2.665 10.143-.768 2.274 1.76 1.66 4.096-.175 4.096-2.207 0-1.047-2.888-4.61-2.888-2.583 0-3.599 1.837-1.78 2.731 2.466 1.225 8.75.816 8.75 5.603-.005 1.992-1.226 3.477-3.128 4.253z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    {/* header-bottom - end */}
   </header>
-  {/* header-section - end
-		================================================== */}
-  {/* altranative-header - start
-		================================================== */}
-  <div className="header-altranative">
-    <div className="container">
-      <div className="logo-area float-left">
-        <a href="index-1.html">
-          <img src="assets/images/1.site-logo.png" alt="logo_not_found" />
-        </a>
-      </div>
-      <button type="button" id="sidebarCollapse" className="alt-menu-btn float-right">
-        <i className="fas fa-bars" />
-      </button>
-    </div>
-    {/* sidebar menu - start */}
-    <div className="sidebar-menu-wrapper">
-      <div id="sidebar" className="sidebar">
-        <span id="sidebar-dismiss" className="sidebar-dismiss">
-          <i className="fas fa-arrow-left" />
-        </span>
-        <div className="sidebar-header">
-          <a href="#!">
-            <img src="assets/images/2.site-logo.png" alt="logo_not_found" />
-          </a>
-        </div>
-        {/* sidebar-form - start */}
-        <div className="sidebar-form">
-          <form action="#">
-            <input id="altmenu-sidebar-search" type="search" placeholder="Search" />
-            <label htmlFor="altmenu-sidebar-search"><i className="fas fa-search" /></label>
-          </form>
-        </div>
-        {/* sidebar-form - end */}
-        {/* main-pages-links - start */}
-        <div className="menu-link-list main-pages-links">
-          <h2 className="menu-title">all home pages</h2>
-          <ul>
-            <li>
-              <a href="index-1.html">
-                <span className="icon"><i className="fas fa-home" /></span>
-                Home V.1
-              </a>
-            </li>
-            <li>
-              <a href="index-2.html">
-                <span className="icon"><i className="fas fa-home" /></span>
-                Home V.2
-              </a>
-            </li>
-            <li>
-              <a href="index-3.html">
-                <span className="icon"><i className="fas fa-home" /></span>
-                Home v.3
-              </a>
-            </li>
-            <li>
-              <a href="index-4.html">
-                <span className="icon"><i className="fas fa-home" /></span>
-                Home v.4
-              </a>
-            </li>
-          </ul>
-        </div>
-        {/* main-pages-links - end */}
-        {/* other-pages-links - start */}
-        <div className="menu-link-list other-pages-links">
-          <h2 className="menu-title">all single pages</h2>
-          <ul>
-            <li>
-              <a href="about.html">
-                <span className="icon"><i className="fas fa-home" /></span>
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="service.html">
-                <span className="icon"><i className="fas fa-home" /></span>
-                our Services
-              </a>
-            </li>
-            <li>
-              <a href="event-1.html">
-                <span className="icon"><i className="fas fa-home" /></span>
-                event list
-              </a>
-            </li>
-            <li>
-              <a href="event-2.html">
-                <span className="icon"><i className="fas fa-home" /></span>
-                event grid
-              </a>
-            </li>
-            <li>
-              <a href="event-1-without-sidebar.html">
-                <span className="icon"><i className="fas fa-home" /></span>
-                list without sidebar
-              </a>
-            </li>
-            <li>
-              <a href="event-2-without-sidebar.html">
-                <span className="icon"><i className="fas fa-home" /></span>
-                grid without sidebar
-              </a>
-            </li>
-            <li>
-              <a href="blog.html">
-                <span className="icon"><i className="fas fa-home" /></span>
-                Latest blogs
-              </a>
-            </li>
-            <li>
-              <a href="gallery.html">
-                <span className="icon"><i className="fas fa-home" /></span>
-                our gallery
-              </a>
-            </li>
-            <li>
-              <a href="speaker.html">
-                <span className="icon"><i className="fas fa-home" /></span>
-                event speakers
-              </a>
-            </li>
-            <li className="active">
-              <a href="contact.html">
-                <span className="icon"><i className="fas fa-home" /></span>
-                contact us
-              </a>
-            </li>
-          </ul>
-        </div>
-        {/* other-pages-links - end */}
-        {/* inner-pages-links - start */}
-        <div className="menu-link-list inner-pages-links">
-          <h2 className="menu-title">all inner pages</h2>
-          <ul>
-            <li>
-              <a href="booking.html">
-                <span className="icon"><i className="fas fa-home" /></span>
-                event booking
-              </a>
-            </li>
-            <li>
-              <a href="event-details.html">
-                <span className="icon"><i className="fas fa-home" /></span>
-                event details
-              </a>
-            </li>
-            <li>
-              <a href="blog-details.html">
-                <span className="icon"><i className="fas fa-home" /></span>
-                blog details
-              </a>
-            </li>
-            <li>
-              <a href="faq.html">
-                <span className="icon"><i className="fas fa-home" /></span>
-                Frequently Ask Qusetion
-              </a>
-            </li>
-            <li>
-              <a href="404-error.html">
-                <span className="icon"><i className="fas fa-home" /></span>
-                404 error
-              </a>
-            </li>
-          </ul>
-        </div>
-        {/* inner-pages-links - end */}
-        {/* login-btn-group - start */}
-        <div className="login-btn-group">
-          <ul>
-            <li>
-              <a href="#alt-register-modal" className="register-modal-btn">
-                Register
-              </a>
-              <div id="alt-register-modal" className="reglog-modal-wrapper register-modal mfp-hide clearfix" style={{backgroundImage: 'url(assets/images/login-modal-bg.jpg)'}}>
-                <div className="overlay-black clearfix">
-                  {/* leftside-content - start */}
-                  <div className="leftside-content">
-                    <div className="site-logo-wrapper mb-80">
-                      <a href="#!" className="logo">
-                        <img src="assets/images/2.site-logo.png" alt="logo_not_found" />
-                      </a>
-                    </div>
-                    <div className="register-login-link mb-80">
-                      <ul>
-                        <li><a href="#!">Login</a></li>
-                        <li className="active"><a href="#!">Register</a></li>
-                      </ul>
-                    </div>
-                    <div className="copyright-text">
-                      <p className="m-0">©2018 <a href="#!" className="yellow-color">Harmoni.com</a> all right reserved, made with <i className="fas fa-heart" /> by jThemes Studio </p>
-                    </div>
-                  </div>
-                  {/* leftside-content - end */}
-                  {/* rightside-content - start */}
-                  <div className="rightside-content text-center">
-                    <div className="mb-30">
-                      <h2 className="form-title title-large white-color">Account <strong>Register</strong></h2>
-                      <span className="form-subtitle white-color">Have an account? <strong>LOGIN NOW</strong></span>
-                    </div>
-                    <div className="login-form text-center mb-50">
-                      <form action="#!">
-                        <div className="form-item">
-                          <input type="email" placeholder="User Name" />
-                        </div>
-                        <div className="form-item">
-                          <input type="password" placeholder="Password" />
-                        </div>
-                        <div className="form-item">
-                          <input type="email" placeholder="Repeat Password" />
-                        </div>
-                        <div className="form-item">
-                          <input type="password" placeholder="Email Address" />
-                        </div>
-                        <div className="human-verification text-left">
-                          <input type="checkbox" id="alt-imnotarobot" />
-                          <label htmlFor="alt-imnotarobot">I'm not a robot</label>
-                          <span className="verification-image">
-                            <img src="assets/images/iamnotrobot.png" alt="Image_not_found" />
-                          </span>
-                        </div>
-                        <button type="submit" className="login-btn">login now</button>
-                      </form>
-                    </div>
-                    <div className="bottom-text white-color">
-                      <p className="m-0">
-                        * Denotes mandatory field.
-                      </p>
-                      <p className="m-0">** At least one telephone number is required.</p>
-                    </div>
-                  </div>
-                  {/* rightside-content - end */}
-                  <a className="popup-modal-dismiss" href="#!">
-                    <i className="fas fa-times" />
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <a href="#alt-login-modal" className="login-modal-btn">
-                Login
-              </a>
-              <div id="alt-login-modal" className="reglog-modal-wrapper mfp-hide clearfix" style={{backgroundImage: 'url(assets/images/login-modal-bg.jpg)'}}>
-                <div className="overlay-black clearfix">
-                  {/* leftside-content - start */}
-                  <div className="leftside-content">
-                    <div className="site-logo-wrapper mb-80">
-                      <a href="#!" className="logo">
-                        <img src="assets/images/2.site-logo.png" alt="logo_not_found" />
-                      </a>
-                    </div>
-                    <div className="register-login-link mb-80">
-                      <ul>
-                        <li className="active"><a href="#!">Login</a></li>
-                        <li><a href="#!">Register</a></li>
-                      </ul>
-                    </div>
-                    <div className="copyright-text">
-                      <p className="m-0">©2018 <a href="#!" className="yellow-color">Harmoni.com</a> all right reserved, made with <i className="fas fa-heart" /> by jThemes Studio </p>
-                    </div>
-                  </div>
-                  {/* leftside-content - end */}
-                  {/* rightside-content - start */}
-                  <div className="rightside-content text-center">
-                    <div className="mb-30">
-                      <h2 className="form-title title-large white-color">Account <strong>Login</strong></h2>
-                      <span className="form-subtitle white-color">Login to our website, or <strong>REGISTER</strong></span>
-                    </div>
-                    <div className="fb-login-btn mb-30">
-                      <a href="#!">
-                        <span className="icon">
-                          <i className="fab fa-facebook-f" />
-                        </span>
-                        login with facebook
-                      </a>
-                    </div>
-                    <div className="or-text mb-30">
-                      <span>or sign in</span>
-                    </div>
-                    <div className="login-form text-center mb-50">
-                      <form action="#!">
-                        <div className="form-item">
-                          <input type="email" placeholder="example@gmail.com" />
-                        </div>
-                        <div className="form-item">
-                          <input type="password" placeholder="Password" />
-                        </div>
-                        <button type="submit" className="login-btn">login now</button>
-                      </form>
-                    </div>
-                    <div className="bottom-text white-color">
-                      <p className="m-0">
-                        * Denotes mandatory field.
-                      </p>
-                      <p className="m-0">** At least one telephone number is required.</p>
-                    </div>
-                  </div>
-                  {/* rightside-content - end */}
-                  <a className="popup-modal-dismiss" href="#!">
-                    <i className="fas fa-times" />
-                  </a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        {/* login-btn-group - end */}
-        {/* social-links - start */}
-        <div className="social-links">
-          <h2 className="menu-title">get in touch</h2>
-          <div className="mb-15">
-            <h3 className="contact-info">
-              <i className="fas fa-phone" />
-              100-2222-9999
-            </h3>
-            <h3 className="contact-info">
-              <i className="fas fa-envelope" />
-              info@harmoni.com
-            </h3>
+  {/*Mobile contact*/}
+  <div className="popup-modal1">
+    <div className="modal" id="menu-popup">
+      <div className="modal-dialog">
+        <div className="modal-content">
+          <div className="modal-header">
+            <div className="common-heading">
+              <h4 className="mt0 mb0">Request A Quote </h4>
+            </div>
+            <button type="button" className="closes" data-dismiss="modal">×</button>
           </div>
-          <ul>
-            <li>
-              <a href="#!"><i className="fab fa-facebook-f" /></a>
-            </li>
-            <li>
-              <a href="#!"><i className="fab fa-twitter" /></a>
-            </li>
-            <li>
-              <a href="#!"><i className="fab fa-twitch" /></a>
-            </li>
-            <li>
-              <a href="#!"><i className="fab fa-google-plus-g" /></a>
-            </li>
-            <li>
-              <a href="#!"><i className="fab fa-instagram" /></a>
-            </li>
-          </ul>
-          <a href="contact.html" className="contact-btn">contact us</a>
+          {/* Modal body */}
+          <div className="modal-body">
+            <div className="form-block fdgn2 mt10 mb10">
+              <form action="#" method="post" name="feedback-form" id="contactForm">
+                <div className="fieldsets row">
+                  <div className="col-md-12"><input type="text" placeholder="Full Name" name="name" /></div>
+                  <div className="col-md-12"><input type="email" placeholder="Email Address" name="email" />
+                  </div>
+                  <div className="col-md-12"><input type="number" placeholder="Contact Number" name="phone" /></div>
+                  <div className="col-md-12"><input type="text" placeholder="Subject" name="subject" />
+                  </div>
+                  <div className="col-md-12"><textarea placeholder="Message" name="message" defaultValue={""} />
+                  </div>
+                </div>
+                <div className="fieldsets mt20 pb20">
+                  <button type="submit" name="submit" className="lnk btn-main bg-btn" data-dismiss="modal">Submit <i className="fas fa-chevron-right fa-icon" /><span className="circle" /></button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-        {/* social-links - end */}
-        <div className="overlay" />
       </div>
     </div>
-    {/* sidebar menu - end */}
   </div>
-  {/* altranative-header - end
-		================================================== */}
+  {/*Mobile contact*/}
 </div>
+
 
     </>
 
