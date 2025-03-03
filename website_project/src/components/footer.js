@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -15,11 +16,16 @@ export default function Footer() {
         <div className="col-lg-12 col-sm-12 text-center">
           <a className="navbar-brand img-ctr" href="index.html"> <img src="assets/images//logo-2.png" alt="Logo" width={100} /></a>
           <ul className="footer-link-v2 link-hover mt30">
-            <li><a href="feature.html">Feature</a></li>
-            <li><a href="event.html">Events</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
+          <li><Link to="/feature" >Features</Link></li>
+            <li><Link to="/event" >Events</Link></li>
+            <li><Link to="/gallery" >Gallery</Link></li>
+            <li><Link to="/about" >About Us</Link></li>
+              <li><Link to="/contact" >Contact Us</Link></li>
+            {/* <li><a href="feature.html">Feature</a></li> */}
+            {/* <li><a href="event.html">Events</a></li> */}
+            {/* <li><a href="gallery.html">Gallery</a></li> */}
+            {/* <li><a href="about-us.html">About Us</a></li> */}
+            {/* <li><a href="contact-us.html">Contact Us</a></li> */}
           </ul>
         </div>
       </div>

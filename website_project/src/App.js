@@ -7,6 +7,8 @@ import Login from "./Pages/login";
 import About from "./Pages/about";
 import Features from "./Pages/feature";
 import Team from "./Pages/team";
+import Event from "./Pages/event";
+import Gallery from "./Pages/gallery";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/feature" element={<Features />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/event" element={<Event />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
       </Routes>

@@ -9,14 +9,23 @@ export default function Header() {
   <header className="header-pr nav-bg-b main-header navfix fixed-top menu-dark ">
     <div className="container-fluid m-pad">
       <div className="menu-header">
-        <div className="dsk-logo"><a className="nav-brand" href="index.html">
+        <div className="dsk-logo">
+          {/* <a className="nav-brand" href="index.html">
             <img src="assets/images/logo.png" height="50px" alt="Logo" className="mega-white-logo" />
             <img src="assets/images/logo.png" height="50px" alt="Logo" className="mega-darks-logo" />
-          </a></div>
+          </a> */}
+          <Link to="/" className="nav-brand">
+          <img src="assets/images/logo.png" height="50px" alt="Logo" className="mega-white-logo" />
+            <img src="assets/images/logo.png" height="50px" alt="Logo" className="mega-darks-logo" />
+         
+          </Link>
+          </div>
         <div className="custom-nav" role="navigation">
           <ul className="nav-list onepge link-hover">
-            <li><a href="feature.html" className="menu-links">Features</a></li>
-            <li><a href="event.html" className="menu-links">Events</a></li>
+          <li><Link to="/feature" className="menu-links">Features</Link></li>
+          <li><Link to="/event" className="menu-links">Events</Link></li>
+            {/* <li><a href="feature.html" className="menu-links">Features</a></li> */}
+            {/* <li><a href="event.html" className="menu-links">Events</a></li> */}
             {/* <li><a href="job-boards.html" class="menu-links">Job Board</a></li>
 						<li><a href="#" class="menu-links">Property Board</a></li> */}
             <li className="sbmenu rpdropdown">
@@ -26,38 +35,37 @@ export default function Header() {
                   <div className="sub-menu-center-block">
                     <div className="sub-menu-column smfull">
                       <ul>
-                        <li><a href="gallery.html">Gallery</a> </li>
-                        <li><a href="team.html">Team</a> </li>
+                        {/* <li><a href="gallery.html">Gallery</a> </li> */}
+                        {/* <li><a href="team.html">Team</a> </li> */}
+                        <li><Link to="/gallery" >Gallery</Link></li>
+                        <li><Link to="/team" >Team</Link></li>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </li>
-            <li className="sbmenu rpdropdown">
-              <a href="#" className="menu-links">Visit Expos</a>
-              <div className="nx-dropdown menu-dorpdown">
-                <div className="sub-menu-section">
-                  <div className="sub-menu-center-block">
-                    <div className="sub-menu-column smfull">
-                      <ul>
-                        <li><a href="https://property.vexpo.pk/" target="_blank">Property Expo</a> </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li><a href="about-us.html" className="menu-links">About Us </a></li>
-            <li><a href="contact-us.html" className="menu-links">Contact Us </a></li>
+           
+            {/* <li><a href="about-us.html" className="menu-links">About Us </a></li> */}
+            <li><Link to="/about" className="menu-links">About Us</Link></li>
+            {/* <li><a href="contact-us.html" className="menu-links">Contact Us </a></li> */}
+            <li><Link to="/contact" className="menu-links">Contact Us</Link></li>
+
+            {/* <li><Link to="/about" className="menu-links">About Us</Link></li> */}
+{/* <li><Link to="/contact" className="menu-links">Contact Us</Link></li> */}
             {/* <li class="ml-5"><a href="#" class="menu-links">Login</a></li> */}
             <li className="ml-3">
-              <a href="contact-us.html" className="btn-br ">Sign Up <span className="circle" />
-              </a> 
+              {/* <a href="contact-us.html" className="btn-br ">Sign Up <span className="circle" />
+              </a>  */}
+              <Link to="/signup" className="btn-br ">Sign Up <span className="circle" />
+               </Link>
               </li>
               <li className="ml-3">
-              <a href="contact-us.html" className="btn-br bg-btn4 btshad-b2 lnk">Login <span className="circle" />
-              </a> 
+              {/* <a href="contact-us.html" className="btn-br bg-btn4 btshad-b2 lnk">Login <span className="circle" />
+              
+              </a>  */}
+               <Link to="/login" className="btn-br bg-btn4 btshad-b2 lnk ">Login <span className="circle" />
+               </Link>
               </li>
           </ul>
         </div>

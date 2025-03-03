@@ -20,7 +20,7 @@ export default function Features() {
       </div>
     </div>
     <div className="intro-animation">
-      <img className="img-fluid mx-auto d-block my-animated-box animate-this" src="../assets-global.website-files.com/5fa24a97853b6c62b7063020/60c77580eab3026bd5573964_Virtual%20Venue%20hero.png" alt title style={{transform: 'translateX(-20px) translateY(-10px)'}} />
+      <img className="img-fluid mx-auto d-block my-animated-box animate-this" src="/assets/assets-global.website-files.com/5fa24a97853b6c62b7063020/60c77580eab3026bd5573964_Virtual%20Venue%20hero.png" alt title style={{transform: 'translateX(-20px) translateY(-10px)'}} />
     </div>
     <svg className="svg-intro-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
       <path d="M95,0 Q90,90 0,100 L100,100 100,0 Z" fill="#ffffff" />
@@ -312,7 +312,7 @@ export default function Features() {
         <div className="col-lg-6 v-center h-scl- ">
           <div className="img-block-ca2 text-center h-scl-base m-mt30 wow fadeIn res-pz pl-5" data-wow-duration="2s" data-wow-delay=".2s">
             <img src="assets/img/feature-img.jpg" alt="about" className="abt-ca2" />
-            <div className="shape-dg-1 dg-hero-shp1"><img src="images/shape/dots-dg.png" alt="shape" className="img-fluid dot-sp-ca2" /></div>
+            <div className="shape-dg-1 dg-hero-shp1"><img src="assets/images/shape/dots-dg.png" alt="shape" className="img-fluid dot-sp-ca2" /></div>
           </div>
         </div>
       </div>
@@ -635,7 +635,7 @@ export default function Features() {
         <div className="col-lg-6 v-center h-scl-">
           <div className="img-block-ca2 text-center h-scl-base m-mt30 wow fadeIn res-pz pl-5" data-wow-duration="2s" data-wow-delay=".2s">
             <img src="assets/img/market-1.jpg" alt="about" className="abt-ca2" />
-            <div className="shape-dg-1 dg-hero-shp1"><img src="images/shape/dots-dg.png" alt="shape" className="img-fluid dot-sp-ca2" /></div>
+            <div className="shape-dg-1 dg-hero-shp1"><img src="assets/images/shape/dots-dg.png" alt="shape" className="img-fluid dot-sp-ca2" /></div>
           </div>
         </div>
       </div>

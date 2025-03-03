@@ -24,7 +24,7 @@ export default function About() {
           </div>
         </div>
         <div className="col-md-6 v-center tilt-3d pl-5">
-          <div className="img-block base" data-tilt data-tilt-max={4} data-tilt-speed={2000}><img height="550px" src="img/about-banner.png" className="img-fluid upset dg-hero-img0" />
+          <div className="img-block base" data-tilt data-tilt-max={4} data-tilt-speed={2000}><img height="550px" src="assets/img/about-banner.png" className="img-fluid upset dg-hero-img0" />
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@ export default function About() {
     <div className="container">
       <div className="row align-items-center about-reverse">
         <div className="col-lg-6 v-center tilt-3d">
-          <div className="img-block base" data-tilt data-tilt-max={4} data-tilt-speed={2000}><img height="550px" src="img/about-2.png" className="img-fluid upset dg-hero-img0" />
+          <div className="img-block base" data-tilt data-tilt-max={4} data-tilt-speed={2000}><img height="550px" src="assets/img/about-2.png" className="img-fluid upset dg-hero-img0" />
           </div>
         </div>
         <div className="col-lg-6 pl-5">
@@ -117,16 +117,16 @@ export default function About() {
   <div class="row mt-5">
       <div class="col-lg-12">
           <div class="logo-weworkfor owl-carousel">
-              <div class="items"><img src="img/sponser/s-4.png" class="img100w"></div>
-              <div class="items"><img src="img/sponser/s-8.png" class="img100w"></div>
-              <div class="items"><img src="img/sponser/s-3.png" class="img100w"></div>
-              <div class="items"><img src="img/sponser/s-1.png" class="img100w"></div>
-              <div class="items"><img src="img/sponser/s-5.png" class="img100w"></div>
-              <div class="items"><img src="img/sponser/s-6.png" class="img100w"></div>
-              <div class="items"><img src="img/sponser/s-7.png" class="img100w"></div>
-              <div class="items"><img src="img/sponser/s-2.png" class="img100w"></div>
-              <div class="items"><img src="img/sponser/s-9.png" class="img100w"></div>
-              <div class="items"><img src="img/sponser/s-10.png" class="img100w"></div>
+              <div class="items"><img src="assets/img/sponser/s-4.png" class="img100w"></div>
+              <div class="items"><img src="assets/img/sponser/s-8.png" class="img100w"></div>
+              <div class="items"><img src="assets/img/sponser/s-3.png" class="img100w"></div>
+              <div class="items"><img src="assets/img/sponser/s-1.png" class="img100w"></div>
+              <div class="items"><img src="assets/img/sponser/s-5.png" class="img100w"></div>
+              <div class="items"><img src="assets/img/sponser/s-6.png" class="img100w"></div>
+              <div class="items"><img src="assets/img/sponser/s-7.png" class="img100w"></div>
+              <div class="items"><img src="assets/img/sponser/s-2.png" class="img100w"></div>
+              <div class="items"><img src="assets/img/sponser/s-9.png" class="img100w"></div>
+              <div class="items"><img src="assets/img/sponser/s-10.png" class="img100w"></div>
           </div>
       </div>
   </div>
@@ -153,60 +153,60 @@ export default function About() {
                 <clipPath id="__lottie_element_2">
                   <rect width={1750} height={1324} x={0} y={0} />
                 </clipPath>
-                <image xlinkHref="../assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4331fd31e0d2d5fe2acd_img_0.png">
+                <image xlinkHref="assets/assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4331fd31e0d2d5fe2acd_img_0.png">
                 </image>
-                <image xlinkHref="../assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4331a287d557eca909f1_img_1.png">
+                <image xlinkHref="assets/assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4331a287d557eca909f1_img_1.png">
                 </image>
-                <image xlinkHref="../assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad433144b8d85e4e29bc87_img_2.png">
+                <image xlinkHref="assets/assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad433144b8d85e4e29bc87_img_2.png">
                 </image>
-                <image xlinkHref="../assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4331a979d8dff955f789_img_3.png">
+                <image xlinkHref="assets/assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4331a979d8dff955f789_img_3.png">
                 </image>
-                <image xlinkHref="../assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4331c98db664f63e15ec_img_4.png">
+                <image xlinkHref="assets/assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4331c98db664f63e15ec_img_4.png">
                 </image>
-                <image xlinkHref="../assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4332e6b1e38195d7039c_img_5.png">
+                <image xlinkHref="assets/assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4332e6b1e38195d7039c_img_5.png">
                 </image>
-                <image xlinkHref="../assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4333aeb2a3ab9b83da85_img_6.png">
+                <image xlinkHref="assets/assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4333aeb2a3ab9b83da85_img_6.png">
                 </image>
-                <image xlinkHref="../assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4332afcc30765b0f8711_img_7.png">
+                <image xlinkHref="assets/assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4332afcc30765b0f8711_img_7.png">
                 </image>
-                <image xlinkHref="../assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4333def54e4ef683ef2a_img_8.png">
+                <image xlinkHref="assets/assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4333def54e4ef683ef2a_img_8.png">
                 </image>
               </defs>
               <g clipPath="url(#__lottie_element_2)">
                 <g className="png" style={{display: 'block'}} transform="matrix(1,0,0,1,1171.26708984375,886)" opacity={1}>
-                  <image width="560px" height="420px" preserveAspectRatio="xMidYMid slice" xlinkHref="../assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4333def54e4ef683ef2a_img_8.png">
+                  <image width="560px" height="420px" preserveAspectRatio="xMidYMid slice" xlinkHref="assets/assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4333def54e4ef683ef2a_img_8.png">
                   </image>
                 </g>
                 <g className="png" style={{display: 'block'}} transform="matrix(1,0,0,1,594.7670288085938,888)" opacity={1}>
-                  <image width="560px" height="420px" preserveAspectRatio="xMidYMid slice" xlinkHref="../assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4332afcc30765b0f8711_img_7.png">
+                  <image width="560px" height="420px" preserveAspectRatio="xMidYMid slice" xlinkHref="assets/assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4332afcc30765b0f8711_img_7.png">
                   </image>
                 </g>
                 <g className="png" style={{display: 'block'}} transform="matrix(1,0,0,1,19.76702880859375,889)" opacity={1}>
-                  <image width="560px" height="420px" preserveAspectRatio="xMidYMid slice" xlinkHref="../assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4333aeb2a3ab9b83da85_img_6.png">
+                  <image width="560px" height="420px" preserveAspectRatio="xMidYMid slice" xlinkHref="assets/assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4333aeb2a3ab9b83da85_img_6.png">
                   </image>
                 </g>
                 <g className="png" style={{display: 'block'}} transform="matrix(1,0,0,1,1171.26708984375,451)" opacity={1}>
-                  <image width="560px" height="420px" preserveAspectRatio="xMidYMid slice" xlinkHref="../assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4332e6b1e38195d7039c_img_5.png">
+                  <image width="560px" height="420px" preserveAspectRatio="xMidYMid slice" xlinkHref="assets/assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4332e6b1e38195d7039c_img_5.png">
                   </image>
                 </g>
                 <g className="png" style={{display: 'block'}} transform="matrix(1,0,0,1,596.2670288085938,452)" opacity={1}>
-                  <image width="560px" height="420px" preserveAspectRatio="xMidYMid slice" xlinkHref="../assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4331c98db664f63e15ec_img_4.png">
+                  <image width="560px" height="420px" preserveAspectRatio="xMidYMid slice" xlinkHref="assets/assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4331c98db664f63e15ec_img_4.png">
                   </image>
                 </g>
                 <g className="png" style={{display: 'block'}} transform="matrix(0.9999945163726807,0,0,0.9999945163726807,19.2685546875,450.00115966796875)" opacity={1}>
-                  <image width="560px" height="420px" preserveAspectRatio="xMidYMid slice" xlinkHref="../assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4331a979d8dff955f789_img_3.png">
+                  <image width="560px" height="420px" preserveAspectRatio="xMidYMid slice" xlinkHref="assets/assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4331a979d8dff955f789_img_3.png">
                   </image>
                 </g>
                 <g className="png" style={{display: 'block'}} transform="matrix(0.999997615814209,0,0,0.999997615814209,1171.2677001953125,16.00048828125)" opacity="0.9999910432029601">
-                  <image width="560px" height="420px" preserveAspectRatio="xMidYMid slice" xlinkHref="../assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad433144b8d85e4e29bc87_img_2.png">
+                  <image width="560px" height="420px" preserveAspectRatio="xMidYMid slice" xlinkHref="assets/assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad433144b8d85e4e29bc87_img_2.png">
                   </image>
                 </g>
                 <g className="png" style={{display: 'block'}} transform="matrix(0.9999995231628418,0,0,0.9999995231628418,594.7671508789062,17.0001220703125)" opacity="0.9999982099282965">
-                  <image width="560px" height="420px" preserveAspectRatio="xMidYMid slice" xlinkHref="../assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4331a287d557eca909f1_img_1.png">
+                  <image width="560px" height="420px" preserveAspectRatio="xMidYMid slice" xlinkHref="assets/assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4331a287d557eca909f1_img_1.png">
                   </image>
                 </g>
                 <g className="png" style={{display: 'block'}} transform="matrix(1,0,0,1,19.26702880859375,15)" opacity={1}>
-                  <image width="560px" height="420px" preserveAspectRatio="xMidYMid slice" xlinkHref="../assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4331fd31e0d2d5fe2acd_img_0.png">
+                  <image width="560px" height="420px" preserveAspectRatio="xMidYMid slice" xlinkHref="assets/assets-global.website-files.com/5fa24a97853b6c62b7063020/5fad4331fd31e0d2d5fe2acd_img_0.png">
                   </image>
                 </g>
               </g>
@@ -233,28 +233,28 @@ export default function About() {
       <div className="row res-mt mt-5">
         <div className="col-lg-3 col-sm-6 mt30">
           <div className="s-block up-hor">
-            <div className="s-card-icon"><img src="img/icon/whychoose-1.svg" alt="service" className="img-fluid" /></div>
+            <div className="s-card-icon"><img src="assets/img/icon/whychoose-1.svg" alt="service" className="img-fluid" /></div>
             <h4>Steps Interactive Booths</h4>
             <p>Designed to give the user the ultimate experience.</p>
           </div>
         </div>
         <div className="col-lg-3 col-sm-6 mt30">
           <div className="s-block up-hor">
-            <div className="s-card-icon"><img src="img/icon/whychoose-2.svg" alt="service" className="img-fluid" /></div>
+            <div className="s-card-icon"><img src="assets/img/icon/whychoose-2.svg" alt="service" className="img-fluid" /></div>
             <h4>Email Marketing</h4>
             <p>Use our email marketing tool to market your event.</p>
           </div>
         </div>
         <div className="col-lg-3 col-sm-6 mt30">
           <div className="s-block up-hor">
-            <div className="s-card-icon"><img src="img/icon/whychoose-4.svg" alt="service" className="img-fluid" /></div>
+            <div className="s-card-icon"><img src="assets/img/icon/whychoose-4.svg" alt="service" className="img-fluid" /></div>
             <h4>24/7 Support</h4>
             <p>Get complete support 24/7 from our team.</p>
           </div>
         </div>
         <div className="col-lg-3 col-sm-6 mt30">
           <div className="s-block up-hor">
-            <div className="s-card-icon"><img src="img/icon/whychoose-3.svg" alt="service" className="img-fluid" /></div>
+            <div className="s-card-icon"><img src="assets/img/icon/whychoose-3.svg" alt="service" className="img-fluid" /></div>
             <h4>Custom Landing Pages</h4>
             <p>Create customisable landing pages to market your events.</p>
           </div>
